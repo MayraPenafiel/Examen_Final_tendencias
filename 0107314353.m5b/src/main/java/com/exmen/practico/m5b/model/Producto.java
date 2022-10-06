@@ -11,7 +11,7 @@ package com.exmen.practico.m5b.model;
 public class Producto {
     
     private Long id;
-    private String id_factura;
+    private Long id_factura;
     private String cod_producto;
     private String producto_nombre;
     private String cantidad;
@@ -20,7 +20,7 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(Long id, String id_factura, String cod_producto, String producto_nombre, String cantidad, Double precio) {
+    public Producto(Long id, Long id_factura, String cod_producto, String producto_nombre, String cantidad, Double precio) {
         this.id = id;
         this.id_factura = id_factura;
         this.cod_producto = cod_producto;
@@ -37,11 +37,11 @@ public class Producto {
         this.id = id;
     }
 
-    public String getId_factura() {
+    public Long getId_factura() {
         return id_factura;
     }
 
-    public void setId_factura(String id_factura) {
+    public void setId_factura(Long id_factura) {
         this.id_factura = id_factura;
     }
 
